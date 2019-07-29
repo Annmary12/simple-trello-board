@@ -1,0 +1,14 @@
+{
+  "projects": [
+    { "id": 1, "name": "React hooks", "color": "grey", "active": false },
+    { "id": 2, "name": "Weconnect", "color": "grey", "active": false }
+  ],
+  "lists": [
+    { "id": 1, "projectId": 1, "name": "To Do" },
+    { "id": 2, "projectId": 1, "name": "Doing" }
+  ],
+  "cards": [
+    { "id": 1, "listId": 1, "name": "Install eslint", "description": "install linting in the project" },
+    { "id": 2, "listId": 1, "name": "Install yup", "description": "Yup is for validation" }
+  ]
+}
