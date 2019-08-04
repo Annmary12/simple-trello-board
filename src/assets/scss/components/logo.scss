@@ -1,0 +1,68 @@
+// google font subsetting, see Heydon Pickering's: http://www.sitepoint.com/joy-of-subsets-web-fonts/
+@import url('//fonts.googleapis.com/css?family=Pacifico&text=Pure');
+@import url('//fonts.googleapis.com/css?family=Roboto:700&text=css');
+@import url('//fonts.googleapis.com/css?family=Kaushan+Script&text=!');
+
+.stage {
+  perspective: 9999px;
+  transform-style: preserve-3d;
+}
+
+.layer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  animation: ಠ_ಠ 5s infinite alternate ease-in-out -7.5s;
+  animation-fill-mode: backwards;
+  transform: rotateY(0deg) rotateX(13deg) translateZ(0);
+}
+
+.layer:after {
+  font: 70px/0.65 'Pacifico', 'Kaushan Script', Futura, 'Roboto', 'Trebuchet MS', Helvetica, sans-serif;
+  content: 'Anny\A    Board';
+  white-space: pre;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 10px; 
+  color: darken(#fff, 4%);
+  letter-spacing: -2px;
+  text-shadow: 4px 0 10px hsla(0, 0%, 0%, .13);
+}
+
+$i: 1;
+$NUM_LAYERS: 20;
+@for $i from 1 through $NUM_LAYERS {
+  .layer:nth-child(#{$i}):after{
+    transform: translateZ(($i - 1) * -2.5px);
+  }
+}
+
+.layer:nth-child(n+#{round($NUM_LAYERS/2)}):after {
+  -webkit-text-stroke: 3px hsla(0, 0%, 0%, .25);
+}
+
+.layer:nth-child(n+#{round($NUM_LAYERS/2 + 1)}):after {
+  -webkit-text-stroke: 15px #697e95;
+  text-shadow: 6px 0 6px darken(#697e95,35%),
+               5px 5px 5px darken(#697e95,40%),
+               0 6px 6px darken(#697e95,35%);
+}
+
+.layer:nth-child(n+#{round($NUM_LAYERS/2 + 2)}):after {
+  -webkit-text-stroke: 15px darken(#697e95, 10%);
+}
+
+.layer:last-child:after {
+  -webkit-text-stroke: 17px hsla(0, 0%, 0%, .1);
+}
+
+.layer:first-child:after{
+  color: #fff;
+  text-shadow: none;
+}
+
+@keyframes ಠ_ಠ {
+  // 100% { transform: rotateY(-40deg) rotateX(-43deg); }
+}

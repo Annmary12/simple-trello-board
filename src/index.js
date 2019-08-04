@@ -7,7 +7,7 @@ import { history, store } from './helpers'
 
 import App from './App';
 
-import './index.css';
+import './assets/scss/main.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
