@@ -6,7 +6,16 @@ import http from '../helpers/http';
 export const getProjects = async (dispatch) => {
   try {
     const result = await http.get('/projects');
-    dispatch(Success(projectContants.PROJECT_SUCCESS, result.data))
+    dispatch(Success(projectContants.FETCH_PROJECTS, result.data))
+  } catch (error) {
+    dispatch(Failure(projectContants.PROJECT_FAILURE, error))
+  }
+}
+
+export const createProject = async (projectDetail, dispatch) => {
+  try {
+    const result = await http.post('/projects', projectDetail);
+    dispatch(Success(projectContants.ADD_PROJECT, result.data))
   } catch (error) {
     dispatch(Failure(projectContants.PROJECT_FAILURE, error))
   }

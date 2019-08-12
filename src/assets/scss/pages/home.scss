@@ -8,9 +8,14 @@
   border: 2px dashed #697e95;
   border-radius: 2rem;
   margin-top: 10rem;
+  cursor: pointer;
 }
 
 .dashboard {
   display: flex;
   flex-direction: column;
+
+  h3 {
+    cursor: pointer;
+  }
 }

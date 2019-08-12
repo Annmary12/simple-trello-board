@@ -14,10 +14,16 @@ export const initialState = {
         loading: action.bool
       }
 
-    case projectContants.PROJECT_SUCCESS:
+    case projectContants.FETCH_PROJECTS:
       return {
         ...state,
         projects: action.payload
+      }
+  
+    case projectContants.ADD_PROJECT:
+      return {
+        ...state,
+        projects: [...state.projects, action.payload]
       }
 
     case projectContants.PROJECT_FAILURE:

@@ -1,14 +1,76 @@
 {
   "projects": [
-    { "id": 1, "name": "React hooks", "color": "grey", "active": false, "type": "private" },
-    { "id": 2, "name": "Weconnect", "color": "grey", "active": false, "type": "public" }
+    {
+      "id": 1,
+      "name": "React hooks",
+      "color": "grey",
+      "active": false,
+      "type": "private",
+      "description": "Description of react hooks"
+    },
+    {
+      "id": 2,
+      "name": "Weconnect",
+      "description": "Description of weconnect",
+      "color": "grey",
+      "active": false,
+      "type": "public"
+    },
+    {
+      "name": "name",
+      "description": "desc",
+      "type": "private",
+      "id": 3
+    },
+    {
+      "name": "Favourite Things",
+      "description": "Description of favourite things",
+      "type": "public",
+      "id": 4
+    },
+    {
+      "name": "name",
+      "description": "name",
+      "type": "private",
+      "id": 5
+    },
+    {
+      "name": "New Projecy",
+      "description": "New description",
+      "type": "public",
+      "id": 6
+    },
+    {
+      "name": "This should work",
+      "description": "And it will work",
+      "type": "public",
+      "id": 7
+    }
   ],
   "lists": [
-    { "id": 1, "projectId": 1, "name": "To Do" },
-    { "id": 2, "projectId": 1, "name": "Doing" }
+    {
+      "id": 1,
+      "projectId": 1,
+      "name": "To Do"
+    },
+    {
+      "id": 2,
+      "projectId": 1,
+      "name": "Doing"
+    }
   ],
   "cards": [
-    { "id": 1, "listId": 1, "name": "Install eslint", "description": "install linting in the project" },
-    { "id": 2, "listId": 1, "name": "Install yup", "description": "Yup is for validation" }
+    {
+      "id": 1,
+      "listId": 1,
+      "name": "Install eslint",
+      "description": "install linting in the project"
+    },
+    {
+      "id": 2,
+      "listId": 1,
+      "name": "Install yup",
+      "description": "Yup is for validation"
+    }
   ]
 }

@@ -7,7 +7,7 @@ const ProjectList = ({ projects }) => (
     { projects && projects.map(project => (
       <div className="col-md-6 pb-4 project-card" key={project.id}>
         <Card title={project.name} type={project.type}>
-          Connects business together with {project.name}
+          {project.description}
         </Card>
       </div>
     ))}
