@@ -1,27 +1,27 @@
 import React from 'react';
 
 const Logo = () => (
-  <div class="stage mx-5 my-4">
-    <div class="layer"></div>
-    <div class="layer"></div>
-    <div class="layer"></div>
-    <div class="layer"></div>
-    <div class="layer"></div>
-    <div class="layer"></div>
-    <div class="layer"></div>
-    <div class="layer"></div>
-    <div class="layer"></div>
-    <div class="layer"></div>
-    <div class="layer"></div>
-    <div class="layer"></div>
-    <div class="layer"></div>
-    <div class="layer"></div>
-    <div class="layer"></div>
-    <div class="layer"></div>
-    <div class="layer"></div>
-    <div class="layer"></div>
-    <div class="layer"></div>
-    <div class="layer"></div>
+  <div className="stage mx-5 my-4">
+    <div className="layer"></div>
+    <div className="layer"></div>
+    <div className="layer"></div>
+    <div className="layer"></div>
+    <div className="layer"></div>
+    <div className="layer"></div>
+    <div className="layer"></div>
+    <div className="layer"></div>
+    <div className="layer"></div>
+    <div className="layer"></div>
+    <div className="layer"></div>
+    <div className="layer"></div>
+    <div className="layer"></div>
+    <div className="layer"></div>
+    <div className="layer"></div>
+    <div className="layer"></div>
+    <div className="layer"></div>
+    <div className="layer"></div>
+    <div className="layer"></div>
+    <div className="layer"></div>
 </div>
 )
 

@@ -1,7 +1,7 @@
 {
   "projects": [
-    { "id": 1, "name": "React hooks", "color": "grey", "active": false },
-    { "id": 2, "name": "Weconnect", "color": "grey", "active": false }
+    { "id": 1, "name": "React hooks", "color": "grey", "active": false, "type": "private" },
+    { "id": 2, "name": "Weconnect", "color": "grey", "active": false, "type": "public" }
   ],
   "lists": [
     { "id": 1, "projectId": 1, "name": "To Do" },

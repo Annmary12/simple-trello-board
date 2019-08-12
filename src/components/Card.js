@@ -7,8 +7,8 @@ const CardComponent = ({ title, children, type}) => (
     <CardBody>
       <CardTitle className="text-monospace">
         { type && type === 'private'
-         ? <i class="fa fa-lock pr-3"></i>
-         : <i class="fa fa-globe pr-3"></i>
+         ? <i className="fa fa-lock pr-3"></i>
+         : <i className="fa fa-globe pr-3"></i>
         }{ title }
       </CardTitle>
       <CardText className="pt-3 pl-4">

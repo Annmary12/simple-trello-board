@@ -1,0 +1,8 @@
+.project-card {
+  &:hover {
+    .card {
+      box-shadow: .2rem 0.2rem 2.1rem .1rem rgb(146, 144, 144);
+      transform: scale(1.05);
+    }
+  }
+}
