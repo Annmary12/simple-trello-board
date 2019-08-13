@@ -47,28 +47,28 @@
       "id": 7
     }
   ],
-  "lists": [
+  "statuses": [
     {
       "id": 1,
-      "projectId": 1,
       "name": "To Do"
     },
     {
       "id": 2,
-      "projectId": 1,
-      "name": "Doing"
+      "name": "In Progress"
     }
   ],
-  "cards": [
+  "tasks": [
     {
       "id": 1,
-      "listId": 1,
+      "statusId": 1,
+      "projectId": 1,
       "name": "Install eslint",
       "description": "install linting in the project"
     },
     {
       "id": 2,
-      "listId": 1,
+      "statusId": 2,
+      "projectId": 1,
       "name": "Install yup",
       "description": "Yup is for validation"
     }

@@ -19,7 +19,7 @@ export const initialState = {
         ...state,
         projects: action.payload
       }
-  
+
     case projectContants.ADD_PROJECT:
       return {
         ...state,

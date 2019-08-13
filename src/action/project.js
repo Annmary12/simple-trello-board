@@ -21,3 +21,7 @@ export const createProject = async (projectDetail, dispatch) => {
   }
 }
 
+export const getProject = (projectId) => {
+  return http.get(`/projects/${projectId}`);
+}
+

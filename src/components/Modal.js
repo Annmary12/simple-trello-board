@@ -4,7 +4,7 @@ import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 const ModalComponent = ({ toggleModal, children, modalTitle, isOpen, className, extraFunc}) => (
   <div>
     <Modal isOpen={isOpen} toggle={toggleModal} className={className}>
-      <ModalHeader toggle={toggleModal}><h2>{modalTitle}</h2></ModalHeader>
+      <ModalHeader toggle={toggleModal}>{modalTitle}</ModalHeader>
       <ModalBody>
         { children }
       </ModalBody>

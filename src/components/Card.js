@@ -11,7 +11,7 @@ const CardComponent = ({ title, children, type}) => (
          : <i className="fa fa-globe pr-3"></i>
         }{ title }
       </CardTitle>
-      <CardText className="pt-3 pl-4">
+      <CardText className="pt-2 pl-3">
         { children }
       </CardText>
     </CardBody>

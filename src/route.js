@@ -1,13 +1,11 @@
 import React from 'react';
 
-import { Route, Switch } from 'react-router-dom';
-
 import HomePage from './pages/Home';
+import Project from './pages/Project';
 
-const Routes = () => (
-  <Switch>
-    <Route exact path="/" component={HomePage}/>
-  </Switch>
-)
+const Routes = {
+  "/": () => <HomePage />,
+  "/:id": ({id}) => <Project projectId={id} />
+}
 
 export default Routes;

@@ -40,11 +40,11 @@ const Home = () => {
             <Input type="textarea" placeholder="Enter description" col="3" name="description" onChange={handleChange}/>
             <div>
               <FormGroup tag="fieldset">
-                <legend>Project privacy</legend>
+                <span className="pb-5">Project privacy</span>
                 <FormGroup check>
                   <Label check>
                     <Input type="radio" name="type" onChange={handleChange} value="private"/>
-                    <span className="pl-2">Private</span>
+                      Private
                   </Label>
                 </FormGroup>
                 <FormGroup check>
@@ -57,16 +57,17 @@ const Home = () => {
             </div>
           </div>
         </Modal>
+
         <Container className="dashboard">
           <div className="center d-flex flex-column" onClick={toggleModal}>
             <div className="add-project center">
-              <i className="fa fa-plus fa-2x"></i>
+              <i className="fa fa-plus fa-1x"></i>
             </div>
-            <h3 className="my-4">Create a project</h3>
+            <h4 className="my-4">Create a project</h4>
           </div>
 
           <div className="projects mt-5">
-            <h1 className="py-5"> My projects</h1>
+            <h3 className="py-2"> My projects</h3>
             <Projects {...state} />
           </div>
         </Container>
